@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt Oss - Fru Wiik Olsen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/logo.jpg" alt="Fru Wiik Olsen" class="logo-image">
+                <h1 class="logo-text">Fru Wiik Olsen</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="meny.html">Meny</a></li>
+                <li><a href="om-oss.html">Om Oss</a></li>
+                <li><a href="kontakt-oss.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="contact-hero-title">Kontakt Oss</h1>
+                <p class="contact-hero-subtitle">La oss planlegge ditt perfekte arrangement sammen</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h2 class="contact-info-title">Kom i kontakt</h2>
+                    <p class="contact-info-description">Vi ser frem til å høre fra deg og diskutere hvordan vi kan gjøre ditt arrangement uforglemmelig. Kontakt oss for en uforpliktende samtale.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <h4 class="detail-title">Telefon</h4>
+                            <p class="detail-info">32 75 17 00</p>
+                            <p class="detail-note">Mandag - Fredag: 10:00 - 16:00<br>Lørdag: 10:00 - 15:00</p>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <h4 class="detail-title">E-post</h4>
+                            <p class="detail-info">fruwolsen@gmail.com</p>
+                            <p class="detail-note">Vi svarer innen 24 timer</p>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <h4 class="detail-title">Adresse</h4>
+                            <p class="detail-info">Stasjonsgata 25</p>
+                            <p class="detail-info">3300 Hokksund</p>
+                        </div>
+                        
+                        <div class="contact-detail">
+                            <h4 class="detail-title">Tjenester</h4>
+                            <p class="detail-info">Dine-in • Outdoor seating</p>
+                            <p class="detail-note">Catering leveres etter avtale</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 class="form-title">Send oss en forespørsel</h3>
+                    <form class="inquiry-form" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Navn *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-post *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Bedrift/Organisasjon</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="event-type">Type arrangement</label>
+                            <select id="event-type" name="event-type">
+                                <option value="">Velg type arrangement</option>
+                                <option value="bedrift">Bedriftsarrangement</option>
+                                <option value="bryllup">Bryllup</option>
+                                <option value="konfirmasjon">Konfirmasjon</option>
+                                <option value="bursdag">Bursdag</option>
+                                <option value="jubileum">Jubileum</option>
+                                <option value="lunsjcatering">Lunsjcatering</option>
+                                <option value="annet">Annet</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Ønsket dato</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+                            <div class="form-group">
+                                <label for="guests">Antall gjester</label>
+                                <input type="number" id="guests" name="guests" min="1" placeholder="Antall personer">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="menu-preference">Menypreferanse</label>
+                            <select id="menu-preference" name="menu-preference">
+                                <option value="">Velg menytype</option>
+                                <option value="koldtbord">Ordinært koldtbord</option>
+                                <option value="minitapas">Fru Olsens minitapas</option>
+                                <option value="snitter">Håndlagde snitter</option>
+                                <option value="kombinasjon">Kombinasjon av flere</option>
+                                <option value="skreddersydd">Skreddersydd meny</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">Budsjett (valgfritt)</label>
+                            <select id="budget" name="budget">
+                                <option value="">Velg budsjettramme</option>
+                                <option value="under-5000">Under kr 5.000</option>
+                                <option value="5000-10000">kr 5.000 - 10.000</option>
+                                <option value="10000-20000">kr 10.000 - 20.000</option>
+                                <option value="20000-50000">kr 20.000 - 50.000</option>
+                                <option value="over-50000">Over kr 50.000</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Beskrivelse av arrangementet *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Fortell oss om ditt arrangement, spesielle ønsker, allergier eller andre viktige detaljer..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" value="yes">
+                                <span class="checkmark"></span>
+                                Jeg ønsker å motta nyhetsbrev og informasjon om nye menyer
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Send Forespørsel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="faq-title">Ofte stilte spørsmål</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4 class="faq-question">Hvor lang tid på forhånd må jeg bestille?</h4>
+                    <p class="faq-answer">Vi anbefaler å bestille minst 1-2 uker på forhånd for mindre arrangementer, og 3-4 uker for større selskaper. Kontakt oss gjerne for akutte behov.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">Leverer dere til hele regionen?</h4>
+                    <p class="faq-answer">Ja, vi leverer catering i Hokksund og omegn. For leveringer utenfor vårt normale område kan det påløpe ekstra transportkostnader. Kontakt oss for å diskutere leveringsmuligheter.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">Kan dere tilpasse menyene for allergier?</h4>
+                    <p class="faq-answer">Absolutt! Vi tar alle allergier og intoleranser på alvor og kan tilpasse våre menyer etter dine gjester behov. Gi oss beskjed ved bestilling.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">Tilbyr dere også service og oppdekking?</h4>
+                    <p class="faq-answer">Ja, vi kan tilby komplett service inkludert oppdekking, servering og rydding. Dette avtales separat basert på arrangementets størrelse og behov.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">Hva er minimumsbestillingen?</h4>
+                    <p class="faq-answer">For koldtbord og minitapas er minimumsbestillingen 10 personer. For snitter kan vi levere mindre bestillinger. Kontakt oss for spesifikke behov.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4 class="faq-question">Kan jeg få en smaksprøve før bestilling?</h4>
+                    <p class="faq-answer">For større arrangementer kan vi arrangere smaksprøver. Dette avtales individuelt og kan medføre en mindre kostnad som trekkes fra den endelige fakturen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Klar for å starte planleggingen?</h2>
+                <p class="cta-subtitle">Vi gleder oss til å høre om ditt arrangement og hjelpe deg med å skape en uforglemmelig opplevelse</p>
+                <div class="cta-buttons">
+                    <a href="tel:32751700" class="cta-button">Ring Oss Nå</a>
+                    <a href="mailto:fruwolsen@gmail.com" class="cta-button secondary">Send E-post</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Fru Wiik Olsen</h3>
+                    <p class="footer-text">Eksklusiv catering og koldtbord med tradisjon siden generasjoner</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Kontakt</h4>
+                    <p class="footer-text">Telefon: 32 75 17 00</p>
+                    <p class="footer-text">E-post: fruwolsen@gmail.com</p>
+                    <p class="footer-text">Stasjonsgata 25, 3300 Hokksund</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Åpningstider</h4>
+                    <p class="footer-text">Mandag - Fredag: 10:00 - 16:00</p>
+                    <p class="footer-text">Lørdag: 10:00 - 15:00</p>
+                    <p class="footer-text">Catering: Etter avtale</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
