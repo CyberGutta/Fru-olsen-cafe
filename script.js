@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
         lastScrollTop = scrollTop;
     });
     
+    // Interactive Menu Functionality
+    initInteractiveMenu();
+    
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -78,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
     
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.offering-item, .testimonial, .value-item, .team-member, .faq-item');
+    const animateElements = document.querySelectorAll('.offering-item, .testimonial, .value-item, .team-member, .faq-item, .menu-selection-card');
     animateElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
@@ -110,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Smooth hover effects for buttons
-    const buttons = document.querySelectorAll('.cta-button, .submit-button');
+    const buttons = document.querySelectorAll('.cta-button, .submit-button, .menu-selection-button');
     buttons.forEach(button => {
         button.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-2px)';
@@ -121,6 +124,81 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Interactive Menu System
+function initInteractiveMenu() {
+    const menuCards = document.querySelectorAll('.menu-selection-card');
+    const menuDetailsSection = document.getElementById('menu-details');
+    const backButton = document.getElementById('back-button');
+    const menuSelectionSection = document.querySelector('.menu-selection-section');
+    
+    if (!menuCards.length || !menuDetailsSection) return;
+    
+    // Add click handlers to menu cards
+    menuCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const menuType = this.getAttribute('data-menu');
+            showMenuDetails(menuType);
+        });
+        
+        // Also handle button clicks
+        const button = card.querySelector('.menu-selection-button');
+        if (button) {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const menuType = card.getAttribute('data-menu');
+                showMenuDetails(menuType);
+            });
+        }
+    });
+    
+    // Back button handler
+    if (backButton) {
+        backButton.addEventListener('click', function() {
+            hideMenuDetails();
+        });
+    }
+    
+    function showMenuDetails(menuType) {
+        // Hide menu selection
+        menuSelectionSection.style.display = 'none';
+        
+        // Show details section
+        menuDetailsSection.style.display = 'block';
+        
+        // Hide all menu details
+        const allDetails = document.querySelectorAll('.menu-detail-content');
+        allDetails.forEach(detail => {
+            detail.style.display = 'none';
+        });
+        
+        // Show selected menu details
+        const selectedDetail = document.getElementById(menuType + '-details');
+        if (selectedDetail) {
+            selectedDetail.style.display = 'block';
+        }
+        
+        // Smooth scroll to details
+        menuDetailsSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+    
+    function hideMenuDetails() {
+        // Hide details section
+        menuDetailsSection.style.display = 'none';
+        
+        // Show menu selection
+        menuSelectionSection.style.display = 'block';
+        
+        // Smooth scroll back to selection
+        menuSelectionSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+}
 
 // Notification system
 function showNotification(message, type = 'info') {

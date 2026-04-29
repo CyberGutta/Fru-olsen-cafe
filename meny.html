@@ -26,133 +26,168 @@
         </div>
     </nav>
 
-    <!-- Menu Hero -->
-    <section class="simple-menu-hero">
+    <!-- Interactive Menu Selection -->
+    <section class="menu-selection-section" style="padding-top: 8rem;">
         <div class="container">
-            <h1 class="simple-menu-title">Våre Menyer</h1>
-            <p class="simple-menu-subtitle">Enkelt og oversiktlig - velg det som passer ditt arrangement</p>
-        </div>
-    </section>
-
-    <!-- Koldtbord -->
-    <section class="simple-menu-section">
-        <div class="container">
-            <div class="simple-menu-card">
-                <h2 class="menu-card-title">Ordinært Koldtbord</h2>
-                <div class="menu-card-price">Kr 369,- per kuvert</div>
-                
-                <div class="menu-card-content">
-                    <div class="menu-image-section">
-                        <img src="bilder/image copy.png" alt="Ordinært Koldtbord" class="menu-card-image">
+            <div class="menu-cards-grid">
+                <!-- Koldtbord Card -->
+                <div class="menu-selection-card" data-menu="koldtbord">
+                    <div class="menu-card-image-wrapper">
+                        <img src="bilder/image copy.png" alt="Ordinært Koldtbord" class="menu-selection-image">
                     </div>
-                    <h3>Koldtbordet består av:</h3>
-                    <ul class="simple-menu-list">
-                        <li>Røkt laks med eggerøre <span class="allergens">(egg, melk)</span></li>
-                        <li>Roastbiff med hjemmelaget remoulade <span class="allergens">(egg, sennep)</span></li>
-                        <li>Karbonader med løk <span class="allergens">(melk)</span></li>
-                        <li>Spekemat anretning</li>
-                        <li>Kylling kubber (Buffalo wings)</li>
-                        <li>Hjemmelaget potetsalat <span class="allergens">(egg, melk, sennep)</span></li>
-                        <li>Pastasalat <span class="allergens">(gluten)</span></li>
-                        <li>Brød, løff og dressing</li>
-                    </ul>
-                    
-                    <p class="menu-note">Vi kan også sette sammen en miks av koldtbord og tapas, og vi er åpne for andre ønsker.</p>
+                    <div class="menu-card-info">
+                        <h3 class="menu-selection-title">Ordinært Koldtbord</h3>
+                        <p class="menu-selection-price">Kr 369,- per kuvert</p>
+                        <p class="menu-selection-description">Vårt signatur koldtbord med røkt laks, roastbiff, spekemat og hjemmelagde delikatesser</p>
+                        <button class="menu-selection-button">Se Meny</button>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Minitapas -->
-    <section class="simple-menu-section alt">
-        <div class="container">
-            <div class="simple-menu-card">
-                <h2 class="menu-card-title">Fru Olsens Minitapas</h2>
-                <div class="menu-card-price">Fra Kr 409,- per person</div>
-                
-                <div class="menu-card-content">
-                    <div class="menu-image-section">
-                        <img src="bilder/image copy 2.png" alt="Fru Olsens Minitapas" class="menu-card-image">
+                <!-- Minitapas Card -->
+                <div class="menu-selection-card" data-menu="minitapas">
+                    <div class="menu-card-image-wrapper">
+                        <img src="bilder/image copy 2.png" alt="Fru Olsens Minitapas" class="menu-selection-image">
                     </div>
-                    <div class="tapas-column">
-                        <h3>Kalde retter:</h3>
-                        <ul class="simple-menu-list">
-                            <li>Spekeskinke med asparges/brokkolini</li>
-                            <li>Fat med ost og spekemat (Charcuterie)</li>
-                            <li>Roastbiff med hjemmelaget remoulade</li>
-                            <li>Fru Olsen spesial (reker)</li>
-                            <li>Lakseruller</li>
-                        </ul>
+                    <div class="menu-card-info">
+                        <h3 class="menu-selection-title">Fru Olsens Minitapas</h3>
+                        <p class="menu-selection-price">Fra Kr 409,- per person</p>
+                        <p class="menu-selection-description">Raffinerte små retter med både kalde og varme delikatesser, perfekt for enhver anledning</p>
+                        <button class="menu-selection-button">Se Meny</button>
                     </div>
-                    
-                    <div class="tapas-column">
-                        <h3>Varme retter:</h3>
-                        <ul class="simple-menu-list">
-                            <li>Panert kylling eller dadler i bacon</li>
-                            <li>Buffalo wings</li>
-                            <li>Spanske kjøttboller</li>
-                            <li>Amadine poteter med vår egen krydderolje</li>
-                        </ul>
+                </div>
+
+                <!-- Snitter Card -->
+                <div class="menu-selection-card" data-menu="snitter">
+                    <div class="menu-card-image-wrapper">
+                        <img src="bilder/image copy 3.png" alt="Håndlagde Snitter" class="menu-selection-image">
                     </div>
-                    
-                    <div class="tapas-column">
-                        <h3>Tilbehør:</h3>
-                        <ul class="simple-menu-list">
-                            <li>Foccacia</li>
-                            <li>Aioli</li>
-                            <li>Litt frukt og grønt</li>
-                        </ul>
+                    <div class="menu-card-info">
+                        <h3 class="menu-selection-title">Håndlagde Snitter</h3>
+                        <p class="menu-selection-price">Fra Kr 166,- for 3 stk</p>
+                        <p class="menu-selection-description">Klassiske norske snitter med premium pålegg og hjemmelagde delikatesser</p>
+                        <button class="menu-selection-button">Se Meny</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Snitter -->
-    <section class="simple-menu-section">
+    <!-- Menu Details (Hidden by default) -->
+    <section class="menu-details-section" id="menu-details" style="display: none;">
         <div class="container">
-            <div class="simple-menu-card">
-                <h2 class="menu-card-title">Håndlagde Snitter</h2>
-                
-                <div class="menu-card-content">
-                    <div class="menu-image-section">
-                        <img src="bilder/image copy 3.png" alt="Håndlagde Snitter" class="menu-card-image">
-                    </div>
-                    <div class="snitter-prices">
-                        <div class="price-row">
-                            <span class="price-item">3 snitter</span>
-                            <span class="price-amount">Kr 166,-</span>
-                        </div>
-                        <div class="price-row bestseller">
-                            <span class="price-item">3 snitter + karbonader</span>
-                            <span class="price-amount">Kr 214,- <small>(Bestselger)</small></span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price-item">4 snitter</span>
-                            <span class="price-amount">Kr 203,-</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price-item">4 snitter + karbonader</span>
-                            <span class="price-amount">Kr 250,-</span>
-                        </div>
-                        <div class="price-row">
-                            <span class="price-item">5 snitter</span>
-                            <span class="price-amount">Kr 239,-</span>
-                        </div>
-                    </div>
+            <div class="menu-details-header">
+                <button class="back-button" id="back-button">← Tilbake til menyvalg</button>
+            </div>
+            
+            <!-- Koldtbord Details -->
+            <div class="menu-detail-content" id="koldtbord-details" style="display: none;">
+                <div class="detail-card">
+                    <h2 class="detail-title">Ordinært Koldtbord</h2>
+                    <div class="detail-price">Kr 369,- per kuvert</div>
                     
-                    <h3>Pålegg å velge mellom:</h3>
-                    <div class="snitter-options">
-                        <span class="option-tag">Torgersen karbonader</span>
-                        <span class="option-tag">Reker</span>
-                        <span class="option-tag">Roastbiff</span>
-                        <span class="option-tag">Laks og eggerøre</span>
-                        <span class="option-tag">Skinkestek med waldorfsalat</span>
-                        <span class="option-tag">Spekeskinke med eggesalat</span>
-                        <span class="option-tag">Brie med bacon og ripsgele</span>
-                        <span class="option-tag">Brie med frukt</span>
-                        <span class="option-tag">Skinke med italiensk salat</span>
-                        <span class="option-tag">Leverpostei og bacon</span>
+                    <div class="detail-content">
+                        <h3>Koldtbordet består av:</h3>
+                        <ul class="detail-menu-list">
+                            <li>Røkt laks med eggerøre <span class="allergens">(egg, melk)</span></li>
+                            <li>Roastbiff med hjemmelaget remoulade <span class="allergens">(egg, sennep)</span></li>
+                            <li>Karbonader med løk <span class="allergens">(melk)</span></li>
+                            <li>Spekemat anretning</li>
+                            <li>Kylling kubber (Buffalo wings)</li>
+                            <li>Hjemmelaget potetsalat <span class="allergens">(egg, melk, sennep)</span></li>
+                            <li>Pastasalat <span class="allergens">(gluten)</span></li>
+                            <li>Brød, løff og dressing</li>
+                        </ul>
+                        
+                        <p class="detail-note">Vi kan også sette sammen en miks av koldtbord og tapas, og vi er åpne for andre ønsker.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Minitapas Details -->
+            <div class="menu-detail-content" id="minitapas-details" style="display: none;">
+                <div class="detail-card">
+                    <h2 class="detail-title">Fru Olsens Minitapas</h2>
+                    <div class="detail-price">Fra Kr 409,- per person</div>
+                    
+                    <div class="detail-content">
+                        <div class="tapas-columns">
+                            <div class="tapas-column">
+                                <h3>Kalde retter:</h3>
+                                <ul class="detail-menu-list">
+                                    <li>Spekeskinke med asparges/brokkolini</li>
+                                    <li>Fat med ost og spekemat (Charcuterie)</li>
+                                    <li>Roastbiff med hjemmelaget remoulade</li>
+                                    <li>Fru Olsen spesial (reker)</li>
+                                    <li>Lakseruller</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tapas-column">
+                                <h3>Varme retter:</h3>
+                                <ul class="detail-menu-list">
+                                    <li>Panert kylling eller dadler i bacon</li>
+                                    <li>Buffalo wings</li>
+                                    <li>Spanske kjøttboller</li>
+                                    <li>Amadine poteter med vår egen krydderolje</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tapas-column">
+                                <h3>Tilbehør:</h3>
+                                <ul class="detail-menu-list">
+                                    <li>Foccacia</li>
+                                    <li>Aioli</li>
+                                    <li>Litt frukt og grønt</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snitter Details -->
+            <div class="menu-detail-content" id="snitter-details" style="display: none;">
+                <div class="detail-card">
+                    <h2 class="detail-title">Håndlagde Snitter</h2>
+                    
+                    <div class="detail-content">
+                        <div class="snitter-pricing-grid">
+                            <div class="price-box">
+                                <div class="price-header">3 snitter</div>
+                                <div class="price-value">Kr 166,-</div>
+                            </div>
+                            <div class="price-box bestseller-box">
+                                <div class="price-header">3 snitter + karbonader</div>
+                                <div class="price-value">Kr 214,-</div>
+                                <div class="bestseller-badge">Bestselger</div>
+                            </div>
+                            <div class="price-box">
+                                <div class="price-header">4 snitter</div>
+                                <div class="price-value">Kr 203,-</div>
+                            </div>
+                            <div class="price-box">
+                                <div class="price-header">4 snitter + karbonader</div>
+                                <div class="price-value">Kr 250,-</div>
+                            </div>
+                            <div class="price-box">
+                                <div class="price-header">5 snitter</div>
+                                <div class="price-value">Kr 239,-</div>
+                            </div>
+                        </div>
+                        
+                        <h3>Pålegg å velge mellom:</h3>
+                        <div class="snitter-options">
+                            <span class="option-tag">Torgersen karbonader</span>
+                            <span class="option-tag">Reker</span>
+                            <span class="option-tag">Roastbiff</span>
+                            <span class="option-tag">Laks og eggerøre</span>
+                            <span class="option-tag">Skinkestek med waldorfsalat</span>
+                            <span class="option-tag">Spekeskinke med eggesalat</span>
+                            <span class="option-tag">Brie med bacon og ripsgele</span>
+                            <span class="option-tag">Brie med frukt</span>
+                            <span class="option-tag">Skinke med italiensk salat</span>
+                            <span class="option-tag">Leverpostei og bacon</span>
+                        </div>
                     </div>
                 </div>
             </div>

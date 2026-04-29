@@ -630,7 +630,353 @@ section {
     overflow: hidden;
 }
 
-/* Simple Menu Page Styles */
+/* Interactive Menu Page Styles */
+.interactive-menu-hero {
+    padding: 12rem 0 4rem;
+    background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
+    text-align: center;
+}
+
+.interactive-menu-title {
+    font-size: clamp(3rem, 6vw, 5rem);
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.interactive-menu-subtitle {
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    font-weight: 300;
+}
+
+.menu-selection-section {
+    padding: 4rem 0;
+}
+
+.menu-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-selection-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-selection-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card-image-wrapper {
+    height: 250px;
+    overflow: hidden;
+}
+
+.menu-selection-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.menu-selection-card:hover .menu-selection-image {
+    transform: scale(1.05);
+}
+
+.menu-card-info {
+    padding: 2rem;
+}
+
+.menu-selection-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.menu-selection-price {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #8b4513;
+    margin-bottom: 1rem;
+}
+
+.menu-selection-description {
+    color: #5a5a5a;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.menu-selection-button {
+    background: #8b4513;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.menu-selection-button:hover {
+    background: #6d3410;
+    transform: translateY(-2px);
+}
+
+/* Menu Details Section */
+.menu-details-section {
+    padding: 10rem 0 4rem;
+    background: #faf9f7;
+    animation: fadeIn 0.5s ease;
+}
+
+.menu-details-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.back-button {
+    background: transparent;
+    border: 2px solid #8b4513;
+    color: #8b4513;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.back-button:hover {
+    background: #8b4513;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.3);
+}
+
+.detail-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.detail-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.detail-price {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #8b4513;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background: rgba(139, 69, 19, 0.1);
+    border-radius: 8px;
+}
+
+.detail-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin: 2rem 0 1rem 0;
+}
+
+.detail-menu-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.detail-menu-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    color: #2c2c2c;
+}
+
+.detail-menu-list li:last-child {
+    border-bottom: none;
+}
+
+.detail-note {
+    background: #f8f6f0;
+    padding: 2rem;
+    border-radius: 8px;
+    color: #5a5a5a;
+    font-style: italic;
+    margin-top: 2rem;
+}
+
+/* Tapas columns for details */
+.tapas-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tapas-column {
+    background: #f8f6f0;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* Snitter pricing grid */
+.snitter-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.price-box {
+    background: white;
+    border: 2px solid #f0ede5;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.price-box:hover {
+    border-color: #8b4513;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(139, 69, 19, 0.1);
+}
+
+.bestseller-box {
+    border-color: #8b4513;
+    background: rgba(139, 69, 19, 0.05);
+}
+
+.price-header {
+    font-size: 1.1rem;
+    color: #2c2c2c;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.price-value {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #8b4513;
+}
+
+.bestseller-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #8b4513;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Responsive for snitter grid */
+@media (max-width: 768px) {
+    .snitter-pricing-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 0.8rem;
+    }
+    
+    .price-box {
+        padding: 1rem;
+    }
+    
+    .price-header {
+        font-size: 1rem;
+    }
+    
+    .price-value {
+        font-size: 1.2rem;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.menu-detail-content {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .interactive-menu-hero {
+        padding: 10rem 0 3rem;
+    }
+    
+    .menu-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .menu-card-info {
+        padding: 1.5rem;
+    }
+    
+    .detail-card {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+    
+    .detail-title {
+        font-size: 2.5rem;
+    }
+    
+    .tapas-columns {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .tapas-column {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .interactive-menu-title {
+        font-size: 2.5rem;
+    }
+    
+    .detail-title {
+        font-size: 2rem;
+    }
+    
+    .detail-card {
+        padding: 1.5rem;
+    }
+}
 .simple-menu-hero {
     padding: 12rem 0 4rem;
     background: linear-gradient(135deg, #f8f6f0 0%, #f0ede5 100%);
