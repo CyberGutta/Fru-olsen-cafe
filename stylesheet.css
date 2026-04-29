@@ -1791,10 +1791,12 @@ section {
 .contact-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+    gap: 4rem;
+    align-items: start;
 }
 
 .contact-info-title {
+    font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     color: #1a1a1a;
     margin-bottom: 2rem;
@@ -1810,35 +1812,38 @@ section {
 .contact-details {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 3rem;
 }
 
 .contact-detail {
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.contact-detail:last-child {
-    border-bottom: none;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #8b4513;
 }
 
 .detail-title {
     font-family: 'Playfair Display', serif;
     font-size: 1.3rem;
     color: #8b4513;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 .detail-info {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #1a1a1a;
-    font-weight: 500;
-    margin-bottom: 0.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 .detail-note {
     color: #6a6a6a;
     font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
 }
 
 .contact-form {
