@@ -1,1 +1,1 @@
-Nettside for Fru Olsen AS
+Nettside for Fru Wiik Olsen AS
