@@ -15,6 +15,7 @@ body {
     color: #2c2c2c;
     background-color: #fefefe;
     font-weight: 300;
+    overflow-x: hidden;
 }
 
 /* Typography */
@@ -255,7 +256,7 @@ section {
 
 .offerings-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
 }
 
@@ -328,7 +329,7 @@ section {
 
 /* Gallery Section */
 .gallery-section {
-    padding: 0;
+    padding: 2rem;
 }
 
 .gallery-grid {
@@ -550,6 +551,10 @@ section {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
     .nav-container {
         padding: 0 1rem;
     }
@@ -855,10 +860,17 @@ section {
 
 .menu-cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* 2×2 på tablet/mellomstore skjermer — unngår auto-fit som gir 3+1 */
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .menu-cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .menu-selection-card {
@@ -868,6 +880,9 @@ section {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .menu-selection-card:hover {
@@ -878,6 +893,7 @@ section {
 .menu-card-image-wrapper {
     height: 250px;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .menu-selection-image {
@@ -893,6 +909,10 @@ section {
 
 .menu-card-info {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
 }
 
 .menu-selection-title {
@@ -925,6 +945,7 @@ section {
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
+    margin-top: auto;
 }
 
 .menu-selection-button:hover {
@@ -2000,6 +2021,7 @@ section {
     font-size: 2.5rem;
     color: #1a1a1a;
     margin-bottom: 2rem;
+    word-wrap: break-word;
 }
 
 .contact-info-description {
@@ -2007,6 +2029,8 @@ section {
     color: #4a4a4a;
     margin-bottom: 3rem;
     line-height: 1.7;
+    word-wrap: break-word;
+}
 }
 
 .contact-details {
@@ -2020,7 +2044,8 @@ section {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    border-left: 4px solid #8b4513;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .detail-title {
@@ -2050,6 +2075,7 @@ section {
     background: #faf9f7;
     padding: 3rem;
     border-radius: 8px;
+    max-width: 100%;
 }
 
 .form-title {
@@ -2087,6 +2113,8 @@ section {
 .form-group input,
 .form-group select,
 .form-group textarea {
+    width: 100%;
+    max-width: 100%;
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -2129,6 +2157,8 @@ section {
 }
 
 .submit-button {
+    width: 100%;
+    max-width: 100%;
     padding: 1.2rem 2rem;
     background: #8b4513;
     color: white;
@@ -2259,6 +2289,18 @@ section {
         grid-template-columns: 1fr;
     }
     
+    .contact-info-title {
+        font-size: 2rem;
+    }
+    
+    .contact-form-section {
+        padding: 4rem 1rem;
+    }
+    
+    .form-title {
+        font-size: 1.5rem;
+    }
+    
     .values-grid,
     .team-grid,
     .commitment-points {
@@ -2292,6 +2334,34 @@ section {
     
     .contact-form {
         padding: 1.5rem;
+    }
+    
+    .contact-detail {
+        padding: 1.5rem;
+    }
+    
+    .contact-form-section {
+        padding: 3rem 1rem;
+    }
+    
+    .form-title {
+        font-size: 1.3rem;
+    }
+    
+    .contact-info-description {
+        font-size: 1rem;
+    }
+    
+    .detail-title {
+        font-size: 1.1rem;
+    }
+    
+    .detail-info {
+        font-size: 1.1rem;
+    }
+    
+    .container {
+        padding: 0 0.75rem;
     }
     
     .value-item,

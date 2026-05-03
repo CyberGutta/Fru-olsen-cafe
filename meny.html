@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meny - Fru Wiik Olsen</title>
+    <title>Meny og catering - Fru Olsen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -15,8 +15,8 @@
     <nav class="navigation">
         <div class="nav-container">
             <div class="logo">
-                <img src="assets/logo.jpg" alt="Fru Wiik Olsen" class="logo-image">
-                <h1 class="logo-text">Fru Wiik Olsen</h1>
+                <img src="assets/logo.jpg" alt="Fru Olsen" class="logo-image">
+                <h1 class="logo-text">Fru Olsen</h1>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Hjem</a></li>
@@ -44,7 +44,7 @@
                     <div class="menu-card-info">
                         <h3 class="menu-selection-title">Ordinært Koldtbord</h3>
                         <p class="menu-selection-price">Kr 369,- per kuvert</p>
-                        <p class="menu-selection-description">Vårt signatur koldtbord med røkt laks, roastbiff, spekemat og hjemmelagde delikatesser</p>
+                        <p class="menu-selection-description">Klassisk koldtbord med blant annet laks, roastbiff, spekemat og hjemmelaget tilbehør. Minimum ti personer.</p>
                         <button class="menu-selection-button">Se Meny</button>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                     <div class="menu-card-info">
                         <h3 class="menu-selection-title">Fru Olsens Minitapas</h3>
                         <p class="menu-selection-price">Fra Kr 409,- per person</p>
-                        <p class="menu-selection-description">Raffinerte små retter med både kalde og varme delikatesser, perfekt for enhver anledning</p>
+                        <p class="menu-selection-description">Kalde og varme småretter til selskap og feiring. Minimum ti personer.</p>
                         <button class="menu-selection-button">Se Meny</button>
                     </div>
                 </div>
@@ -70,22 +70,21 @@
                     <div class="menu-card-info">
                         <h3 class="menu-selection-title">Håndlagde Snitter</h3>
                         <p class="menu-selection-price">Fra Kr 166,- for 3 stk</p>
-                        <p class="menu-selection-description">Klassiske norske snitter med premium pålegg og hjemmelagde delikatesser</p>
+                        <p class="menu-selection-description">Klassiske snitter med utvalgte pålegg. Ofte brukt som møtemat – ta kontakt for forespørsel.</p>
                         <button class="menu-selection-button">Se Meny</button>
                     </div>
                 </div>
 
 
-                <!-- Enkle retter--> <!-- TO DO LEGG TIL BILDE KANSKJE AV EN PIZZA ELLER BAKT POTET ELLER NOE SOM ER "ENKLE RETTER" og legg til selve enkle retter...-->
-                <div class="menu-selection-card" data-menu="minitapas">
+                <div class="menu-selection-card" data-menu="enkle-retter">
                     <div class="menu-card-image-wrapper">
-                        <img src="bilder/image copy 2.png" alt="Enkle retter" class="menu-selection-image">
+                        <img src="bilder/image copy 2.png" alt="Enkle retter i caféen" class="menu-selection-image">
                     </div>
                     <div class="menu-card-info">
                         <h3 class="menu-selection-title">Enkle og smaksfulle retter</h3>
-                        <p class="menu-selection-price">Fra Kr 409,- per person</p>
-                        <p class="menu-selection-description">Raffinerte små retter med både kalde og varme delikatesser, perfekt for enhver anledning</p>
-                        <button class="menu-selection-button">Se Meny</button>
+                        <p class="menu-selection-price">Serveres i caféen</p>
+                        <p class="menu-selection-description">Blant annet terteskjell med fiskepudding og reker (mest solgt), bakt potet, pizza, salater, baguetter og focaccia.</p>
+                        <button class="menu-selection-button">Se mer</button>
                     </div>
                 </div>
 
@@ -120,6 +119,7 @@
                         </ul>
                         
                         <p class="detail-note">Vi kan også sette sammen en miks av koldtbord og tapas, og vi er åpne for andre ønsker.</p>
+                        <p class="detail-note">Vi har ikke rømmegrøt på menyen og lager ikke egen leverpostei. Dressing, remulade, egen krydderblanding og Fru Olsen-spesial (rekesalat) lages hos oss.</p>
                     </div>
                 </div>
             </div>
@@ -166,12 +166,30 @@
                 </div>
             </div>
 
+            <!-- Enkle retter (café) -->
+            <div class="menu-detail-content" id="enkle-retter-details" style="display: none;">
+                <div class="detail-card">
+                    <h2 class="detail-title">Enkle og smaksfulle retter</h2>
+                    <div class="detail-content">
+                        <p>Dette er et utvalg av det vi serverer i caféen. Priser og dagens utvalg får du hos oss.</p>
+                        <ul class="detail-menu-list">
+                            <li>Terteskjell med fiskepudding og reker – vår mestselgende rett</li>
+                            <li>Bakt potet, pizza, salater</li>
+                            <li>Baguetter, focaccia med mer</li>
+                        </ul>
+                        <p class="detail-note">Vi lager mange typer kaffe: caffe latte, iskaffe, mocca, cappuccino med mer. Til søtsaker: kaker, hvetebakst og wienerbakst, og i sommersesongen softis og kuleis.</p>
+                        <p class="detail-note">Vi har ikke rømmegrøt og lager ikke egen leverpostei. Dressing, remulade, krydderblanding og Fru Olsen-spesial (rekesalat) er fra vårt kjøkken.</p>
+                    </div>
+                </div>
+            </div>
+
             <!-- Snitter Details -->
             <div class="menu-detail-content" id="snitter-details" style="display: none;">
                 <div class="detail-card">
                     <h2 class="detail-title">Håndlagde Snitter</h2>
                     
                     <div class="detail-content">
+                        <p class="detail-note">Snitter leveres etter forespørsel.</p>
                         <div class="snitter-pricing-grid">
                             <div class="price-box">
                                 <div class="price-header">3 snitter</div>
@@ -207,8 +225,8 @@
                             <span class="option-tag">Brie med bacon og ripsgele</span>
                             <span class="option-tag">Brie med frukt</span>
                             <span class="option-tag">Skinke med italiensk salat</span>
-                            <span class="option-tag">Leverpostei og bacon</span>
                         </div>
+                        <p class="detail-note">Vi lager ikke egen leverpostei. Pålegg kan variere – spør oss.</p>
                     </div>
                 </div>
             </div>
@@ -219,7 +237,7 @@
     <section class="simple-cta">
         <div class="container">
             <h2>Har du spørsmål eller spesielle ønsker?</h2>
-            <p>Vi tilpasser gjerne menyene etter dine behov og tar hensyn til allergier.</p>
+            <p>Ta kontakt – så ser vi på allergier, antall og om du ønsker henting eller avtalt levering.</p>
             <a href="kontakt-oss.html" class="cta-button">Kontakt Oss</a>
         </div>
     </section>
@@ -229,8 +247,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3 class="footer-title">Fru Wiik Olsen</h3>
-                    <p class="footer-text">Eksklusiv catering og koldtbord med tradisjon siden generasjoner</p>
+                    <h3 class="footer-title">Fru Olsen</h3>
+                    <p class="footer-text">Café og catering i Hokksund siden 2017 – egne oppskrifter og ekte lidenskap for mat</p>
                 </div>
                 <div class="footer-section">
                     <h4 class="footer-subtitle">Kontakt</h4>
