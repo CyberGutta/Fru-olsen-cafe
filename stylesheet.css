@@ -1298,6 +1298,8 @@ section {
 .menu-card-image:hover {
     transform: scale(1.02);
 }
+
+.menu-note {
     background: #f8f6f0;
     padding: 1.5rem;
     border-radius: 4px;
@@ -2031,7 +2033,6 @@ section {
     line-height: 1.7;
     word-wrap: break-word;
 }
-}
 
 .contact-details {
     display: flex;
@@ -2369,5 +2370,102 @@ section {
     .commitment-point,
     .faq-item {
         padding: 1.5rem;
+    }
+}
+
+/* Price List Section Styles */
+.price-list-section {
+    margin-bottom: 3rem;
+    padding: 0 0 2rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.price-list-section:last-child {
+    border-bottom: none;
+}
+
+.price-list-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #8b4513;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+}
+
+.price-item:last-of-type {
+    border-bottom: none;
+}
+
+.item-name {
+    font-size: 1.1rem;
+    color: #2c2c2c;
+    flex: 1;
+}
+
+.item-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #8b4513;
+    white-space: nowrap;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.allergens-note {
+    font-size: 0.9rem;
+    color: #8b4513;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-left: 0;
+}
+
+/* Responsive for price list */
+@media (max-width: 768px) {
+    .price-list-section h3 {
+        font-size: 1.5rem;
+    }
+    
+    .price-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1.2rem 0;
+    }
+    
+    .item-price {
+        margin-left: 0;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .price-list-section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+    
+    .price-list-section h3 {
+        font-size: 1.3rem;
+    }
+    
+    .item-name {
+        font-size: 1rem;
+    }
+    
+    .item-price {
+        font-size: 1.1rem;
+    }
+    
+    .allergens-note {
+        font-size: 0.85rem;
     }
 }
