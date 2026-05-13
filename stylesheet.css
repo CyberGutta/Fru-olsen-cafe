@@ -419,12 +419,15 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 3rem;
+    
 }
 
 .testimonial {
     padding: 3rem;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
 }
 
 .testimonial-text {
@@ -432,11 +435,14 @@ section {
     line-height: 1.7;
     margin-bottom: 1.5rem;
     font-style: italic;
+    flex: 1;
+    
 }
 
 .testimonial-author {
     font-weight: 500;
     color: #d4c4a8;
+    margin-top: auto;
 }
 
 /* Contact CTA */
